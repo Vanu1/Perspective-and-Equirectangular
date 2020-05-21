@@ -3,7 +3,7 @@ import argparse
 import numpy as np
 import math
 
-img = cv2.imread("/home/aditya/Desktop/renderpsize2.jpg",1)
+img = cv2.imread("./spherical/image.jpg",1)
 height,width,planes = (np.shape(img))
 ratio = height/width
 dim = (int(720/ratio),720)
@@ -68,8 +68,6 @@ for c in range(0,3):
 
            
 
-cv2.imshow("final",dst_img)
-cv2.waitKey()
-cv2.destroyAllWindows()
 
-#cv2.imwrite("/home/aditya/Desktop/render.jpg",dst_img)
+
+cv2.imwrite('./panorama/input.jpg',dst_img)
