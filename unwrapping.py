@@ -3,7 +3,7 @@ import argparse
 import numpy as np
 import math
 
-img = cv2.imread("./spherical/image.jpg",1)
+img = cv2.imread("./spherical/circle-cropped.jpg",1)
 height,width,planes = (np.shape(img))
 ratio = height/width
 dim = (int(720/ratio),720)
